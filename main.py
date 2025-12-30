@@ -1,0 +1,88 @@
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+
+app = FastAPI()
+
+#Read Query Params
+# @app.get('/submit')
+# def save_data(name, age):
+#     return JSONResponse({
+#         'message': f"Hello {name}, your age is {age}"
+#     })
+
+#Read Path Params
+# @app.get('/{name}/details')
+# def save_data(name):
+#     return JSONResponse({
+#         'message': f"Hello {name}"
+#     })
+
+
+#Read Payload
+# @app.post('/submit')
+# async def save_data(request: Request):
+#     data = await request.json()
+#     print(data)
+
+
+
+
+
+
+
+
+
+
+
+
+# @app.get('/json')
+# def get_json():
+#     data = {
+#         'name': 'John',
+#         'age': 34
+#     }
+#     return JSONResponse(data)
+
+# @app.get('/html')
+# def get_html():
+#     html = '''
+#         <!DOCTYPE html>
+#         <html lang="en">
+#         <head>
+#             <meta charset="UTF-8">
+#             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#             <title>Your Page Title</title>
+#             <link rel="stylesheet" href="style.css">
+#         </head>
+#         <body>
+#             <!-- Your visible content goes here -->
+#             <h1>Hello, World!</h1>
+#             <p>This is a basic HTML5 boilerplate.</p>
+#             <form action="/submit_page" method="post">
+#                 <p>
+#                     <label for="name">Name:</label>
+#                     <input type="text" id="name" name="user_name" />
+#                 </p>
+#                 <p>
+#                     <label for="mail">Email:</label>
+#                     <input type="email" id="mail" name="user_email" />
+#                 </p>
+#                 <p>
+#                     <label for="msg">Message:</label>
+#                     <textarea id="msg" name="user_message"></textarea>
+#                 </p>
+#                 <p>
+#                     <input type="submit" value="Send Message" />
+#                 </p>
+#             </form>
+#             <script src="index.js"></script>
+#         </body>
+#         </html>
+#     '''
+#     return HTMLResponse(html)
+
+
+# @app.get('/redirect')
+# def get_redirect():
+#     url = "http://127.0.0.1:8000/json"
+#     return RedirectResponse(url, status_code=302)
