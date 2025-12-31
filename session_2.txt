@@ -1,0 +1,31 @@
+
+
+# Implement CRUD for contacts
+contacts = [
+    {
+        'id': 1,
+        'name': 'John',
+        'phone': '7013908752'
+    }
+]
+
+# banking API
+## Get All persons
+## Get person by id
+## Get person by name (even if name conatins return all)
+## Transfer amount from one acc to another acc
+## Withdraw amount from an account_id
+## Credit amount to an account_id
+
+persons = [
+    {
+        'account_id': 1,
+        'Name': 'John',
+        'balance': 400,
+    },
+    {
+        'account_id': 1,
+        'Name': 'John',
+        'balance': 400,
+    }
+]
